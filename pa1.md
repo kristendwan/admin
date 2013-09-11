@@ -28,8 +28,8 @@ following information:
 
 The port numbers correspond to two virtual pages you will be hosting for this assignment. Your 
 MySQL account will be used throughout the rest of the semester for your website database 
-backend. You are encouraged to change your MySQL password (initial password is also same 
-as your group name). To change your MySQL password, follow these steps:
+backend. You are encouraged to change your MySQL password (the initial password is 
+your group name). To change your MySQL password, follow these steps:
 
 1. Log into your designated machine via SSH using your uniquenames
 2. Connect to MySQL server:
@@ -69,8 +69,7 @@ service. Your website should have registered users (people), each identified by 
 username. For each person you should also maintain a password, a first name, a last name, 
 and an email address. Each person may create/update/destroy as many albums that he or she 
 owns as he or she would like. Each album has a unique id, a title, a date created, a date last 
-updated, owner's username and a field that specifies the permissions to this album ("public" 
-or "private"). Each album may have zero or more photos. Within the context of a particular 
+updated, and an owner's username. Each album may have zero or more photos. Within the context of a particular 
 album, a photo has a sequence number and a caption. Photos can be used within multiple 
 albums (shared) and in all instances they will have the same URL, date taken, and format 
 ("GIF", "JPG", etc.).
@@ -110,16 +109,16 @@ prefixed by football, sports, space, or world.
 The website currently has three users.
 
 The first has username "sportslover". His real name is Paul Walker. His email address is 
-sportslover@hotmail.com. He created two albums; the first one is titled "I love sports" which is 
-public. The images in this album is prefixed by `sports`. Paul also has another album called "I love football", 
-which is also public. The images in this album is prefixed by `football`.
+sportslover@hotmail.com. He created two albums; the first one is titled "I love sports".
+The images in this album are prefixed by `sports`. Paul also has another album called "I love football".
+The images in this album are prefixed by `football`.
 
 The second has username "traveler". Her real name is Rebecca Travolta. Her email address 
-is rebt@explorer.org. She created a public album called "Around The World". Her images are 
+is rebt@explorer.org. She created an album called "Around The World". Her images are 
 prefixed by `world`.
 
 The third has username "spacejunkie". His real name is Bob Spacey. His email address is 
-bspace@spacejunkies.net. He used the site to create one private album titled "Cool Space 
+bspace@spacejunkies.net. He used the site to create one album titled "Cool Space 
 Shots". His images are prefixed by `space`.
 
 Put the SQL statements you used to load data in the file `/sql/load_data.sql` in your group git repo for this project. Refer to Deliverables section for more detail about how to submit. Although you can load 
