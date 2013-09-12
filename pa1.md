@@ -319,7 +319,7 @@ with your websites, some modification of your database can occur - don't worry i
 we test your website - just make sure the given content is present. 
 
 #### Code
-Your server-side code will be graded by cloning at your GitHub repository. Be sure to use a `.gitingore` file to tell git to ignore any non-souce files (like `.pyc` files or `/venv`, etc) *and* the `/pictures` directory. Please do not put pictures anywhere in your git repo.
+Your server-side code will be graded by cloning at your GitHub repository. Be sure to use a `.gitignore` file to tell git to ignore any non-souce files (like `.pyc` files or `/venv`, etc) *and* the `/pictures` directory. Please do not put pictures anywhere in your git repo.
 
 In the `README.md` at the root of your repository please provide the following details:
 
