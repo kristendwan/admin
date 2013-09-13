@@ -4,11 +4,11 @@
 
 There are many resources online for installing these. See the course staff if you are having trouble.
 
-[Mac OSX](#MAMP)
+[Mac OSX](#mamp)
 
-[Windows](#WAMP)
+[Windows](#wamp)
 
-[Linux](#LAMP)
+[Linux](#lamp)
 
 ### MAMP
 
