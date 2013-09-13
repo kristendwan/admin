@@ -24,7 +24,7 @@ these directories with secret key).
 
 4. Open `httpd.conf` and edit following directives:
 
-    a. Find `PidFile` and modify the location to `/home/$group/apache/run/httpd.pid`.
+    a. Add this line: `/home/group*/apache/run/httpd.pid`.
 
     Apache instances check before running if this file is already created. Thus, this file should not 
     be shared.
@@ -32,42 +32,34 @@ these directories with secret key).
     b. Find `Listen`, and change to assigned ports. You will listen two ports, so there should be two 
     lines of Listen directives.
 
-    c. Find `Include conf.d/*.conf` and change it to `Include conf.d/php.conf`. I haven’t 
-    found how to resolve this issue gracefully, and this is a workaround. (The original directive 
-    means include all configuration files under the directory, but some of them required sudo 
-    access.)
-
-    d. Find `ErrorLog` and change the location to, for example,
+    c. Find `ErrorLog` and change the location to, for example,
 
         ErrorLog /home/$group/apache/error_log
 
-    e. Find `CustomLog` and change the location to, for example,
+    d. Find `CustomLog` and change the location to, for example,
 
         CustomLog /home/$group/apache/access_log combined
 
     Be careful since there are many `CustomLog`s which are commented out.
 
-    f. Go to the last line, and you will find configurations for virtual hosting. Enter like the following.
+    e. Go to the last line, and you will find configurations for virtual hosting. Enter like the following.
 
     ```xml
     <VirtualHost *:5000> 
             DocumentRoot /home/$group/apache/html
             ErrorLog "/home/$group/apache/httpd-error.log"
-            <Directory "/home/$group/apache/html">
-            DirectoryIndex index.html index.php
-            Order allow,deny
-            Allow from all
-            </Directory>
     </VirtualHost>
     ```
 
   You should have each copy of <VirtualHost> for each port. Each directive should point different 
   `DocumentRoot`, and `Directory`. You don’t necessarily need to specify different `ErrorLog`.
 
+    f.  Comment out all the <Directory>*</Directory> patterns, and DirectoryRoot.
+    
 5. Save the file and exit.
 6. Start apache server by typing (this should be absolute path)
 
-      apachectl -f /home/$group/apache/conf/httpd.conf -k start
+      httpd -f /home/group/apache/conf/httpd.conf -k start
 
 7. If you want to kill processes, type
 
