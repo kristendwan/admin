@@ -24,13 +24,13 @@ Unless you're lucky `pip install mysql-python` probably failed. Thats because yo
 Whew, fun right? Welcome to web development, sometimes setting up tools is a huge pain.
 
 ## Run the Darn Thing:
-You can simply run `python main.py` now and you'll have an app running!
+You can simply run `python app.py` now and you'll have an app running!
 
 Once you've gotten your app working fine run `pip freeze > requirement.txt` to save your dependencies as they are. This way when your group mates pull your code they can just run `pip install -r requirements.txt` just like before!
 
 ## Deploy
 
-To deploy this guy we need a WSGI server. You can run `gunicorn -b localhost:3000 -b localhost:3001 -w 4 main:app` this means the app will run with four workers, locally on two ports! You can drop the -w 4, its probably overkill for this class.
+To deploy this guy we need a WSGI server. You can run `gunicorn -b localhost:3000 -b localhost:3001 -w 4 app:app` this means the app will run with four workers, locally on two ports! You can drop the -w 4, its probably overkill for this class.
 
 If we were really going to deploy this app, we'd run this sucker behind a proxy server like `nginx` - kudos if you figure out how to do this. Nginx would do all the static files for us too. Luckily, Flask will host static files for you in '/static' feel free to put your '/pictures' folder here!
 
