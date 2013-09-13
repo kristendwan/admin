@@ -24,7 +24,7 @@ these directories with secret key).
 
 4. Open `httpd.conf` and edit following directives:
 
-    a. Add this line: `/home/group*/apache/run/httpd.pid`.
+    a. Add this line: PidFile `/home/group*/apache/run/httpd.pid`.
 
     Apache instances check before running if this file is already created. Thus, this file should not 
     be shared.
@@ -54,7 +54,7 @@ these directories with secret key).
   You should have each copy of <VirtualHost> for each port. Each directive should point different 
   `DocumentRoot`, and `Directory`. You don’t necessarily need to specify different `ErrorLog`.
 
-    f.  Comment out all the <Directory>*</Directory> patterns, and DirectoryRoot.
+    f.  Comment out all the ```<Directory>*</Directory>``` patterns, and DirectoryRoot.
     
 5. Save the file and exit.
 6. Start apache server by typing (this should be absolute path)
