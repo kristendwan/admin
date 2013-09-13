@@ -54,7 +54,7 @@ these directories with secret key).
   You should have each copy of <VirtualHost> for each port. Each directive should point different 
   `DocumentRoot`, and `Directory`. You don’t necessarily need to specify different `ErrorLog`.
 
-    f.  Comment out all the ```<Directory>*</Directory>``` patterns, and DirectoryRoot.
+    f.  Comment out all the ```<Directory>*</Directory>``` patterns, and DocumentRoot.
     
 5. Save the file and exit.
 6. Start apache server by typing (this should be absolute path)
