@@ -22,22 +22,19 @@
 
 ### Directory Structure
 
-* Smarty-3.1.14
-
+* Smarty-3.1.14/
  * Source code for the templating library
  * Don't touch this.
 
-* static
-
+* static/
  * Public files to be included client-side (JavaScript and CSS)
  * EDIT these
 
-* templates
-
+* templates/
  * All the Smarty template files in here (HTML markup)
  * EDIT these
 
-* vendor (behind the scenes)
+* vendor/ (behind the scenes)
 
 * .htaccess
 
