@@ -1,6 +1,14 @@
-## Up and Running with PHP and Apache
+# The PHP framework will be updated on Saturday, 9/14 around noon.
 
-## Download a package for local development
+There will be major changes, don't look at these instructions or the code. The new framework is on par with Python.
+
+
+
+
+
+### Up and Running with PHP and Apache
+
+### Download a package for local development
 
 There are many resources online for installing these. See the course staff if you are having trouble.
 
