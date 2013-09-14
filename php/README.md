@@ -8,7 +8,7 @@ Log into your machine: `ssh UNIQNAME@eecs485-NUMBER.eecs.umich.edu`
 
 `bash setup.sh GROUPNAME PORTNUMBER`
 
-`httpd -f /home/GROUPNAME/admin/php/conf/http.conf -k start`
+`httpd -f /home/GROUPNAME/admin/php/conf/httpd.conf -k start`
 
 #### Congratulations!
 
