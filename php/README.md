@@ -18,25 +18,28 @@ Start by editing html/index.php and then html/templates/templates/
 
 ### Directory Structure
 
-* conf
-
- * Apache Config File
+* conf/
+ * Apache Config Directory
  * EDIT THIS
  * Go to all the TODOs and make the appropriate changes
 
-* html
+* html/
  * Your code here for PA1
+
+* run/
+ * An apache folder that you need. Don't mess with it.
 
 * access_log
  * Apache appends this file with info about every incoming web request
  * Useful to inspect for debugging
 
-* httpd-error.log
+* error_log
+ * Apache errors go here. If you have trouble running the server, check this file
 
+* httpd-error.log
  * Apache stores server-side error messages here (Especially HTTP 500 errors)
  * Useful to inspect for debugging
 
 * setup.sh
-
  * Run this script with your group name and desired port number to setup apache
  * Example: `bash setup.sh group1 2520`
