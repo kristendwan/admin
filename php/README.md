@@ -1,5 +1,7 @@
 ## PHP Skeleton Code
 
+### How to Install
+
 Log into your machine: `ssh UNIQNAME@eecs485-NUMBER.eecs.umich.edu`
 
 `git clone git@github.com:EECS485/admin.git`
