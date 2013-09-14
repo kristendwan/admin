@@ -8,8 +8,8 @@ echo " for group: [$1]";
 echo " on port:   [$2]";
 
 if [ "$1" ] && [ "$2" ]; then
-    sed -i '.orig' s/mattman/$1/g conf/httpd.conf;
-    sed -i '.orig' s/4801/$2/g conf/httpd.conf;
+    sed -i s/mattman/$1/g conf/httpd.conf
+    sed -i s/4801/$2/g conf/httpd.conf
 else
     echo "Error: You must provide two parameters to this script - your group name and your port number.";
 fi
