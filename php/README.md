@@ -1,20 +1,4 @@
-<<<<<<< HEAD
 ## PHP Skeleton Code
-
-### Getting Started
-=======
-# The PHP framework will be updated on Saturday, 9/14 around noon.
-
-There will be major changes, don't look at these instructions or the code. The new framework is on par with Python.
-
-
-
-
-
-### Up and Running with PHP and Apache
-
-### Download a package for local development
->>>>>>> 580abc77d70c45f10de0eadc816ebc4e5f64bb01
 
 Log into your machine: `ssh UNIQNAME@eecs485-NUMBER.eecs.umich.edu`
 
@@ -54,21 +38,5 @@ Start by editing html/index.php and then html/templates/templates/
 
 * setup.sh
 
-<<<<<<< HEAD
  * Run this script with your group name and desired port number to setup apache
  * Example: `bash setup.sh group1 2520`
-=======
-Matt Kneiser (mattman): server config and sql queries
-
-### Details:
-
-We called our /pic endpoint /foto
-
-### Deploy:
-
-`sudo /etc/init.d/apache2 restart`
-
-### Extra:
-
-We used 1 late day.
->>>>>>> 580abc77d70c45f10de0eadc816ebc4e5f64bb01
