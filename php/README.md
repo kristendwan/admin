@@ -6,6 +6,8 @@ Log into your machine: `ssh UNIQNAME@eecs485-NUMBER.eecs.umich.edu`
 
 `git clone git@github.com:EECS485/admin.git`
 
+If you have trouble cloning (`fatal: Could not read from remote repository.`) then follow [this tutorial to set up your ssh keys with Github](https://help.github.com/articles/generating-ssh-keys).
+
 `cd admin/php`
 
 `bash setup.sh GROUPNAME PORTNUMBER`
