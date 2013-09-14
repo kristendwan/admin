@@ -6,6 +6,7 @@ See [the Smarty docs](http://www.smarty.net/docs/en/index.tpl) for syntax refere
 
 The `{* Smarty *}` at the top of each file is a comment, and is just used as convention.
 
+
 * album.tpl
 
 * albums.tpl
