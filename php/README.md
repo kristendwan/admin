@@ -2,17 +2,19 @@
 
 ### How to Install
 
-Log into your machine: `ssh UNIQNAME@eecs485-NUMBER.eecs.umich.edu`
+1) Log into your machine: `ssh UNIQNAME@eecs485-NUMBER.eecs.umich.edu`
 
-`git clone git@github.com:EECS485/admin.git`
+2) `git clone git@github.com:EECS485/admin.git`
 
 If you have trouble cloning (`fatal: Could not read from remote repository.`) then follow [this tutorial to set up your ssh keys with Github](https://help.github.com/articles/generating-ssh-keys).
 
-`cd admin/php`
+3) `cd admin/php`
 
-`bash setup.sh GROUPNAME PORTNUMBER`
+4) `bash setup.sh GROUPNAME PORTNUMBER`
 
-`httpd -f /home/GROUPNAME/admin/php/conf/httpd.conf -k start`
+5) `httpd -f /home/GROUPNAME/admin/php/conf/httpd.conf -k start`
+
+You can always run `.... -k stop` or `.... -k restart` to stop or restart Apache.
 
 #### Congratulations!
 
