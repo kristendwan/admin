@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+## PHP Skeleton Code
+
+### Getting Started
+=======
 # The PHP framework will be updated on Saturday, 9/14 around noon.
 
 There will be major changes, don't look at these instructions or the code. The new framework is on par with Python.
@@ -9,41 +14,50 @@ There will be major changes, don't look at these instructions or the code. The n
 ### Up and Running with PHP and Apache
 
 ### Download a package for local development
+>>>>>>> 580abc77d70c45f10de0eadc816ebc4e5f64bb01
 
-There are many resources online for installing these. See the course staff if you are having trouble.
+Log into your machine: `ssh UNIQNAME@eecs485-NUMBER.eecs.umich.edu`
 
-[Mac OSX](#mamp)
+`git clone git@github.com:EECS485/admin.git`
 
-[Windows](#wamp)
+`cd admin/php`
 
-[Linux](#lamp)
+`bash setup.sh GROUPNAME PORTNUMBER`
 
-### MAMP
+`httpd -f /home/GROUPNAME/admin/php/conf/http.conf -k start`
 
-[Download MAMP](http://www.mamp.info/en/index.html)
+#### Congratulations!
 
-### WAMP
+Your server should be up @ eecs485-NUMBER.eecs.umich.edu:PORTNUMBER/
 
-[Download WAMP](http://www.wampserver.com/en/)
+Start by editing html/index.php and then html/templates/templates/
 
-### LAMP
+### Directory Structure
 
-`sudo apt-get install php5 libapache2-mod-php5`
+* conf
 
-`sudo /etc/init.d/apache2 restart`
+ * Apache Config File
+ * EDIT THIS
+ * Go to all the TODOs and make the appropriate changes
 
-## Final Notes:
+* html
+ * Your code here for PA1
 
-This should give you a good feel for a basic PHP project and some functionality that server-side languages provide.
+* access_log
+ * Apache appends this file with info about every incoming web request
+ * Useful to inspect for debugging
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Example Project Below README.md:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* httpd-error.log
 
-### Group Name: php-pretty-hyper-people
+ * Apache stores server-side error messages here (Especially HTTP 500 errors)
+ * Useful to inspect for debugging
 
-### Members:
+* setup.sh
 
+<<<<<<< HEAD
+ * Run this script with your group name and desired port number to setup apache
+ * Example: `bash setup.sh group1 2520`
+=======
 Matt Kneiser (mattman): server config and sql queries
 
 ### Details:
@@ -57,3 +71,4 @@ We called our /pic endpoint /foto
 ### Extra:
 
 We used 1 late day.
+>>>>>>> 580abc77d70c45f10de0eadc816ebc4e5f64bb01
