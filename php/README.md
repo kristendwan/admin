@@ -1,51 +1,42 @@
-## Up and Running with PHP and Apache
+## PHP Skeleton Code
 
-## Download a package for local development
+### Getting Started
 
-There are many resources online for installing these. See the course staff if you are having trouble.
+Log into your machine: `ssh UNIQNAME@eecs485-NUMBER.eecs.umich.edu`
 
-[Mac OSX](#mamp)
+`git clone git@github.com:EECS485/admin.git`
 
-[Windows](#wamp)
+`cd admin/php`
 
-[Linux](#lamp)
+`bash setup.sh GROUPNAME PORTNUMBER`
 
-### MAMP
+`httpd -f /home/GROUPNAME/admin/php/conf/http.conf -k start`
 
-[Download MAMP](http://www.mamp.info/en/index.html)
+#### Congratulations!
 
-### WAMP
+Your server should be up @ eecs485-NUMBER.eecs.umich.edu:PORTNUMBER/
 
-[Download WAMP](http://www.wampserver.com/en/)
+### Directory Structure
 
-### LAMP
+* conf
 
-`sudo apt-get install php5 libapache2-mod-php5`
+ * Apache Config File
+ * EDIT THIS
+ * Go to all the TODOs and make the appropriate changes
 
-`sudo /etc/init.d/apache2 restart`
+* html
+ * Your code here for PA1
 
-## Final Notes:
+* access_log
+ * Apache appends this file with info about every incoming web request
+ * Useful to inspect for debugging
 
-This should give you a good feel for a basic PHP project and some functionality that server-side languages provide.
+* httpd-error.log
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Example Project Below README.md:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * Apache stores server-side error messages here (Especially HTTP 500 errors)
+ * Useful to inspect for debugging
 
-### Group Name: php-pretty-hyper-people
+* setup.sh
 
-### Members:
-
-Matt Kneiser (mattman): server config and sql queries
-
-### Details:
-
-We called our /pic endpoint /foto
-
-### Deploy:
-
-`sudo /etc/init.d/apache2 restart`
-
-### Extra:
-
-We used 1 late day.
+ * Run this script with your group name and desired port number to setup apache
+ * Example: `bash setup.sh group1 2520`
