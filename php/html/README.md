@@ -10,6 +10,16 @@
 
 * [Klein-Smarty](https://github.com/f3l1x/Klein-Smarty/) project for more source code examples
 
+### Pre-configured Routes
+
+* `/`
+
+* `/album`
+
+* `/albums`
+
+* `/pic`
+
 ### Directory Structure
 
 * Smarty-3.1.14
