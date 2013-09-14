@@ -1,7 +1,7 @@
 <?php
 
    // Include the Smarty Templating Engine
-   define(SMARTY_DIR, __DIR__ . '/Smarty-3.1.14/libs/');
+   define('SMARTY_DIR', __DIR__ . '/Smarty-3.1.14/libs/');
    require_once(SMARTY_DIR . 'Smarty.class.php');
    $smarty = new Smarty();
 
@@ -9,6 +9,8 @@
    $smarty->setCompileDir(__DIR__ . '/templates/templates_c/');
    $smarty->setConfigDir(__DIR__ . '/templates/configs/');
    $smarty->setCacheDir(__DIR__ . '/templates/cache/');
+
+   $smarty->assign('title', "EECS485");
 
 
    // Setup the Routing Framework
