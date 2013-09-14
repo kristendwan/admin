@@ -10,6 +10,7 @@
    $smarty->setConfigDir(__DIR__ . '/templates/configs/');
    $smarty->setCacheDir(__DIR__ . '/templates/cache/');
 
+   // Notice how you can set variables here in the PHP that will get carried into the template files
    $smarty->assign('title', "EECS485");
 
 
@@ -25,7 +26,10 @@
    });
 
    $klein->respond('GET', '/pic[:id]?', function ($request, $response, $service) use ($smarty) {
+
+     // Notice how you can set variables here in the PHP that will get carried into the template files
      $smarty->assign('picid', $request->id);
+
      $smarty->display('pic.tpl');
    });
 
