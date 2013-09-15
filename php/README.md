@@ -12,7 +12,7 @@ If you have trouble cloning (`fatal: Could not read from remote repository.`) th
 
 4) `bash setup.sh mattman GROUPNAME 4801 PORTNUMBER1 4802 PORTNUMBER2`
 
-You must provide "mattman" "4801" and "4802" in that command, just replace the constants with your team's.
+You must provide "mattman" "4801" and "4802" in that command, just replace the constants with your team's. Refer to conf/README.md if you have trouble configuring two ports, or just want one.
 
 5) `httpd -f /home/GROUPNAME/admin/php/conf/httpd.conf -k start`
 
