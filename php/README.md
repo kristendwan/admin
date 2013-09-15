@@ -47,6 +47,9 @@ Start by editing html/index.php and then html/templates/templates/
  * Apache appends this file with info about every incoming web request
  * Useful to inspect for debugging
 
+* apache_setup.md
+ * Deprecated setup for apache. Please follow the new instructions at the top of this README.
+
 * error_log
  * Apache errors go here. If you have trouble running the server, check this file
 
