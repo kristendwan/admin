@@ -10,11 +10,15 @@ If you have trouble cloning (`fatal: Could not read from remote repository.`) th
 
 3) `cd admin/php`
 
-4) `bash setup.sh GROUPNAME PORTNUMBER`
+4) `bash setup.sh mattman GROUPNAME 4801 PORTNUMBER1 4802 PORTNUMBER2`
+
+You must provide "mattman" "4801" and "4802" in that command, just replace the constants with your team's.
 
 5) `httpd -f /home/GROUPNAME/admin/php/conf/httpd.conf -k start`
 
 You can always run `.... -k stop` or `.... -k restart` to stop or restart Apache.
+
+Use the command `ps aux | grep GROUPNAME` to see whether or not your Apache server is running. There should be a few httpd processes running.
 
 #### Congratulations!
 
