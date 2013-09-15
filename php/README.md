@@ -22,7 +22,11 @@ Use the command `ps aux | grep GROUPNAME` to see whether or not your Apache serv
 
 #### Congratulations!
 
-Your server should be up @ eecs485-NUMBER.eecs.umich.edu:PORTNUMBER/
+Your server should be up @
+
+eecs485-NUMBER.eecs.umich.edu:PORTNUMBER1/
+
+eecs485-NUMBER.eecs.umich.edu:PORTNUMBER2/
 
 Start by editing html/index.php and then html/templates/templates/
 
