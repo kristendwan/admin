@@ -2,7 +2,7 @@
 
 ### How to Install (7 Very Easy Steps!)
 
-1) Log into your machine: `ssh uniqname@eecs485-NUMBER.eecs.umich.edu`
+1) Log into your machine: `ssh UNIQNAME@eecs485-NUMBER.eecs.umich.edu`
 
 2) `cd ../GROUPNAME`
 
