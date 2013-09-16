@@ -30,6 +30,10 @@ eecs485-NUMBER.eecs.umich.edu:PORTNUMBER2/
 
 Start by editing html/index.php and then html/templates/templates/
 
+### App Architecture
+
+![PHP Architecture](https://raw.github.com/EECS485/admin/master/php/PHP_Architecture.png)
+
 ### Directory Structure
 
 * conf/
