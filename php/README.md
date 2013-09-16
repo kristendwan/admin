@@ -1,20 +1,22 @@
 ## PHP Skeleton Code
 
-### How to Install
+### How to Install (6 Very Easy Steps!)
 
 1) Log into your machine: `ssh UNIQNAME@eecs485-NUMBER.eecs.umich.edu`
 
-2) `git clone git@github.com:EECS485/admin.git`
+2) `cd ../GROUPNAME`
+
+3) `git clone git@github.com:EECS485/admin.git`
 
 If you have trouble cloning (`fatal: Could not read from remote repository.`) then follow [this tutorial to set up your ssh keys with Github](https://help.github.com/articles/generating-ssh-keys).
 
-3) `cd admin/php`
+4) `cd admin/php`
 
-4) `bash setup.sh mattman GROUPNAME 4801 PORTNUMBER1 4802 PORTNUMBER2`
+5) `bash setup.sh mattman GROUPNAME 4801 PORTNUMBER1 4802 PORTNUMBER2`
 
 You must provide "mattman" "4801" and "4802" in that command, just replace the constants with your team's. Refer to conf/README.md if you have trouble configuring two ports, or just want one.
 
-5) `httpd -f /home/GROUPNAME/admin/php/conf/httpd.conf -k start`
+6) `httpd -f /home/GROUPNAME/admin/php/conf/httpd.conf -k start`
 
 You can always run `.... -k stop` or `.... -k restart` to stop or restart Apache.
 
