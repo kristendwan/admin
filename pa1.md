@@ -70,9 +70,8 @@ username. For each person you should also maintain a password, a first name, a l
 and an email address. Each person may create/update/destroy as many albums that he or she 
 owns as he or she would like. Each album has a unique id, a title, a date created, a date last 
 updated, and an owner's username. Each album may have zero or more photos. Within the context of a particular 
-album, a photo has a sequence number and a caption. Photos can be used within multiple 
-albums (shared) and in all instances they will have the same URL, date taken, and format 
-("GIF", "JPG", etc.).
+album, a photo has a sequence number and a caption. The same photo can be in two separate albums BUT it will have a different URL, date taken, and picid 
+("GIF", "JPG", etc.) essentially two copies of the same photo.
 
 An initial relational schema for the data you will need is as follows (primary key is bolded):
 

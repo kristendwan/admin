@@ -1,7 +1,0 @@
-RewriteEngine on
-
-# Don't reroute requests to /static, index.php, and robots.txt :)
-RewriteCond $1 !^(index\.php|static|robots\.txt)
-
-# Route everything to the same index.php file
-RewriteRule ^(.*)$ /specs/php/index.php/$1 [L]

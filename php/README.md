@@ -1,51 +1,70 @@
-## Up and Running with PHP and Apache
+## PHP Skeleton Code
 
-## Download a package for local development
+### How to Install (7 Very Easy Steps!)
 
-There are many resources online for installing these. See the course staff if you are having trouble.
+1) Log into your machine: `ssh UNIQNAME@eecs485-NUMBER.eecs.umich.edu`
 
-[Mac OSX](#mamp)
+2) `cd ../GROUPNAME`
 
-[Windows](#wamp)
+3) `git clone git@github.com:EECS485/admin.git`
 
-[Linux](#lamp)
+4) `chown -R UNIQNAME:GROUPNAME admin`
 
-### MAMP
+If you have trouble cloning (`fatal: Could not read from remote repository.`) then follow [this tutorial to set up your ssh keys with Github](https://help.github.com/articles/generating-ssh-keys).
 
-[Download MAMP](http://www.mamp.info/en/index.html)
+5) `cd admin/php`
 
-### WAMP
+6) `bash setup.sh mattman GROUPNAME 4801 PORTNUMBER1 4802 PORTNUMBER2`
 
-[Download WAMP](http://www.wampserver.com/en/)
+You must provide "mattman" "4801" and "4802" in that command, just replace the constants with your team's. Refer to conf/README.md if you have trouble configuring two ports, or just want one.
 
-### LAMP
+7) `httpd -f /home/GROUPNAME/admin/php/conf/httpd.conf -k start`
 
-`sudo apt-get install php5 libapache2-mod-php5`
+You can always run `.... -k stop` or `.... -k restart` to stop or restart Apache.
 
-`sudo /etc/init.d/apache2 restart`
+Use the command `ps aux | grep GROUPNAME` to see whether or not your Apache server is running. There should be a few httpd processes running.
 
-## Final Notes:
+#### Congratulations!
 
-This should give you a good feel for a basic PHP project and some functionality that server-side languages provide.
+Your server should be up @
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Example Project Below README.md:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+eecs485-NUMBER.eecs.umich.edu:PORTNUMBER1/
 
-### Group Name: php-pretty-hyper-people
+eecs485-NUMBER.eecs.umich.edu:PORTNUMBER2/
 
-### Members:
+Start by editing html/index.php and then html/templates/templates/
 
-Matt Kneiser (mattman): server config and sql queries
+### App Architecture
 
-### Details:
+![PHP Architecture](https://raw.github.com/EECS485/admin/master/php/PHP_Architecture.png)
 
-We called our /pic endpoint /foto
+### Directory Structure
 
-### Deploy:
+* conf/
+ * Apache Config Directory
+ * EDIT THIS
+ * Go to all the TODOs and make the appropriate changes
 
-`sudo /etc/init.d/apache2 restart`
+* html/
+ * Your code here for PA1
 
-### Extra:
+* run/
+ * An apache folder that you need. Don't mess with it.
 
-We used 1 late day.
+* access_log
+ * Apache appends this file with info about every incoming web request
+ * Useful to inspect for debugging
+
+* apache_setup.md
+ * Deprecated setup for apache. Please follow the new instructions at the top of this README.
+
+* error_log
+ * Apache errors go here. If you have trouble running the server, check this file
+
+* httpd-error.log
+ * Apache stores server-side error messages here (Especially HTTP 500 errors)
+ * Useful to inspect for debugging
+
+* setup.sh
+ * Run this script with your group name and desired port number to setup apache
+ * Example: `bash setup.sh group1 2520`
