@@ -14,6 +14,6 @@
 
 Your server should be up @
 
-eecs485-NUMBER.eecs.umich.edu:PORTNUMBER1/
+eecs485-NUMBER.eecs.umich.edu:PORT1/
 
-eecs485-NUMBER.eecs.umich.edu:PORTNUMBER2/
+eecs485-NUMBER.eecs.umich.edu:PORT2/
