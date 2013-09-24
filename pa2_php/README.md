@@ -14,9 +14,9 @@
 
 Your server should be up @
 
-eecs485-NUMBER.eecs.umich.edu:PORT1/
+eecs485-NUMBER.eecs.umich.edu:PORT1+200/
 
-eecs485-NUMBER.eecs.umich.edu:PORT2/
+eecs485-NUMBER.eecs.umich.edu:PORT2+200/
 
 
 ### New Directory structure
