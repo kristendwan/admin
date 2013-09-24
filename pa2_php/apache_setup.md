@@ -1,3 +1,5 @@
+# THIS DOCUMENT IS DEPRECATED. DO NOT USE IT. IT IS SOLELY HERE FOR YOUR ENJOYMENT.
+
 ## PA1 with Apache
 You will not have administrative access to your development machine. However, it is not 
 required; Apache and MySQL will happily run as a normal user, provided they are configured 
