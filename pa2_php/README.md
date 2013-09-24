@@ -24,4 +24,12 @@ eecs485-NUMBER.eecs.umich.edu:PORT2+200/
 
 ![Alt text](http://www-personal.umich.edu/~chjun/eecs485/dir.png)
 
-For the following projects, you only need to add new directory under `html`. For the students who don't use Klein&Smarty, you can delete .htaccess in `html`. Because your project directory names already include a secret string (e.g. pa1_secret), you don't need to use another secret string. Please put the URL for your home page in your README.md.
+For the following projects, you only need to clone your project repo under `html`.
+
+### For the students who don't use Klein&Smarty (which is highly not recommended!)
+
+Delete the .htaccess file in `html`.
+
+Rename the directory that gets cloned from "pa2_secret" to "secret".
+
+Please put the URL for your home page in your README.md.
