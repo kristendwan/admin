@@ -118,7 +118,7 @@ application. You should have created some of these for PA1.
 
 #### Default home page:`/` [public]
 
-Contains welcoming message and information about the website. Also has an invitation for new users to join as members. There should be links to a New User page and a Login page. There should be some way of getting from this home page to all the public albums of all users.
+Contains welcoming message and information about the website. Also has an invitation for new users to join as members. There should be a link to a New User page. There should be some way of getting from this home page to all the public albums of all users.
 
 #### New User page:`/user` [public]
 
