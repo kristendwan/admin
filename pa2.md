@@ -57,8 +57,7 @@ You need to add `access` attribute to this table, so the new scheme for Album wi
 
 `access` specifies whether access to the album should be limited to a
 set of users indicated in the *AlbumAccess* table (described below).
-It only takes values of "public" or "private." In view album list page `/albums`, public albums show up with hyperlinks which direct to `/album?id=*`, and private
-albums will have no hyperlinks (though private albums are still listed).
+It only takes values of "public" or "private." 
 
 #### Create new Table AlbumAccess
 
