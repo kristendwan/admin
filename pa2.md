@@ -40,8 +40,7 @@ user has permission to see the page, and if so, let them see the page.
 In some of the cases above, the user is redirected to the Login page. This Login page needs to remember what the requested sensitive page was using a query peramater. For example: `/login?url=/the/prev/url` After the user types her name and password she should be returned right back to the sensitive page she previously tried to access via a redirect again. Note, some of the pages can be sensitive some of the time and public the rest of the time. For example, the View Album page is only sensitive if the album is private.
 
 **Your code should observe the following rules about access privileges:**
-* Public albums are _visible_ and _accessible_ to both logged in users and unauthenticated visitors.
-* Private albums are _visible_ to all logged in users but not to unauthenticated visitors.
+* Public albums are  _accessible_ to both logged in users and unauthenticated visitors.
 * Private albums are _accessible_ only to those users that have explicit access to that
 album. Users will have access to user's private album if
 and only if there exists a tuple (a, u) in the *AlbumAccess* relation
