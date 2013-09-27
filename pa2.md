@@ -166,7 +166,7 @@ public homepage.
 This is your `/albums/edit` page from PA1. It allows the user to
 add new albums, view existing albums, delete them or edit them.
 Remember that deleting an album should also involve deleting
-pictures in the album which are not included in any other album.
+pictures in the album.
 
 #### Edit Album page:`/album/edit` [sensitive]
 ￼￼￼
