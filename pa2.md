@@ -228,9 +228,10 @@ You should enforce the following rules:
 
 * The username must be unique (this can only be enforced server-side)
 * The username must be at least three characters long
-* The username can only have letters, digits and underscores.
-* Passwords should be at least 5 and at most 15 characters long.
-* Passwords must contain at least one digit and at least one letter
+* The username can only have letters, digits and underscores
+* The password should be at least 5 and at most 15 characters long
+* The password must contain at least one digit and at least one letter
+* The password can only have letters, digits and underscores
 
 You can assume that the user is acting in good faith: your goal is to
 prevent users from adding bad usernames/passwords, not to guard
