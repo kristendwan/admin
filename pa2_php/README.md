@@ -51,7 +51,7 @@ Please put the URL for your home page in your README.md.
 
 4) [Press Enter] Three Times
 
-5) ``eval `ssh-agent -s` ``
+5) ``eval `ssh-agent -s` `` PLEASE NOTE THE USE OF BACKTICKS(the key next to the 1 on your keyboard)! THIS->` NOT A SINGLE APOSTROPHE ->'
 
 6) `ssh-add id_rsa`
 
