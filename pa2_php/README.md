@@ -39,3 +39,26 @@ Delete the .htaccess file in `html`.
 Rename the directory that gets cloned from "pa2_secret" to "secret".
 
 Please put the URL for your home page in your README.md.
+
+
+## Setup Github SSH Keys
+
+1) ssh into your eecs485 server!
+
+2) `cd ~/.ssh`
+
+3) `ssh-keygen -t rsa -C "UNIQNAME@umich.edu"`
+
+4) [Press Enter] Three Times
+
+5) ``eval `ssh-agent -s` ``
+
+6) `ssh-add id_rsa`
+
+7) `cat id_rsa.pub`
+
+8) Copy the contents of the file that was just printed out to the command line. It should end with your email address!
+
+9) Follow[ step 3 here](https://help.github.com/articles/generating-ssh-keys).
+
+10) You now have full access to your Github repo!
