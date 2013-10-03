@@ -165,7 +165,7 @@ Don't touch unless you are extending the project.
 
 ## How to Deploy + Grading
 
-You will put all these files into a directory on your local machine. In this directory, enter this command `python -m SimpleHTTPServer`. This will spin up a server that will serve static files. You should then be able to view `http://localhost:8000/`
+You will put all these files into a directory on your local machine. In this directory, enter this command `python -m SimpleHTTPServer PORTNUMBER`. This will spin up a server on PORTNUMBER that will serve static files. You should then be able to view `http://localhost:PORTNUMBER/`. It would be wise to use the port number 400 greater than your originally assigned lowest port number - that way you don't step on your other servers. For example, if your assigned ports are 4801 and 4901, you would use 5201 for this project.
 
 For grading this project, we will only be cloning your Github repo. The code sitting in your pa3 repo will be what we clone. There should be no subdirectories or files other than what we have specified (unless you do extra credit). Please specify anything anomalous in your `README.md`.
 
