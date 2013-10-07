@@ -169,6 +169,8 @@ You will put all these files into a directory on your local machine. In this dir
 
 We recommend that you run on LOCALHOST on your computer. Using your eecs485 server for this project will require you to setup your Facebook Developer account differently.
 
+WINDOWS USERS: Install *just* python. Run `python -m http.server PORTNUMBER` from the command line and you will be all set!
+
 For grading this project, we will only be cloning your Github repo. The code sitting in your pa3 repo will be what we clone. There should be no subdirectories or files other than what we have specified (unless you do extra credit). Please specify anything anomalous in your `README.md`.
 
 ## Extra Credit (10 % max)
