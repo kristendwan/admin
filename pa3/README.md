@@ -132,13 +132,7 @@ still work.
 
 This component will expose you to prototypes in JavaScript. You should modify the JavaScript native object `Number` so that it has two new methods. One of those methods should pretty-print long numbers with commas (e.g. it would convert 12000 to 12,000). The other should convert numbers from degrees to radians.
 
-The other function you should write in this file will be wrapped in a
-[closure](http://en.wikipedia.org/wiki/Closure_(computer_science\)). In
-theory, you could throw a whole slew of additional functions in this
-closure and call it `utils`. From then on, you would have a bunch of
-functionality wrapped in a single global variable, complete with
-information hiding. To give you a flavor of how this would work, you
-must write `distanceFormula()` inside `utils` that will take two
+The other function you should write in this file is `distanceFormula()` that will take two
 geographic coordinates and return the distance between them. For this
 function, use an approximation of the Haversine formula. This formula
 gives you the distance over the curvature of the Earth that it would
