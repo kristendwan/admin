@@ -92,7 +92,7 @@ will use jQuery to tell us when a user triggers an interesting event. You will p
 #### `fb.js`
 
 This file contains all the Facebook API code. We have taken care of
-the OAuth handshaking code that implements the login.  However, you need to set up your developer account. If your team does not have access to a Facebook account, talk to the course staff and we can work with you. 
+the OAuth handshaking code that implements the login.  However, you need to set up your developer account. If your team does not have access to a Facebook account, talk to the course staff and we can work with you. If you plan on using your eecs485 server instead of your laptop for this project, the Facebook setup will be slightly different! Instead of localhost you will use your eecs485 domain name.
 
 1) [Go here](https://developers.facebook.com/apps)
 
@@ -132,13 +132,7 @@ still work.
 
 This component will expose you to prototypes in JavaScript. You should modify the JavaScript native object `Number` so that it has two new methods. One of those methods should pretty-print long numbers with commas (e.g. it would convert 12000 to 12,000). The other should convert numbers from degrees to radians.
 
-The other function you should write in this file will be wrapped in a
-[closure](http://en.wikipedia.org/wiki/Closure_(computer_science\)). In
-theory, you could throw a whole slew of additional functions in this
-closure and call it `utils`. From then on, you would have a bunch of
-functionality wrapped in a single global variable, complete with
-information hiding. To give you a flavor of how this would work, you
-must write `distanceFormula()` inside `utils` that will take two
+The other function you should write in this file is `distanceFormula()` that will take two
 geographic coordinates and return the distance between them. For this
 function, use an approximation of the Haversine formula. This formula
 gives you the distance over the curvature of the Earth that it would
@@ -165,7 +159,11 @@ Don't touch unless you are extending the project.
 
 ## How to Deploy + Grading
 
-You will put all these files into a directory on your local machine. In this directory, enter this command `python -m SimpleHTTPServer`. This will spin up a server that will serve static files. You should then be able to view `http://localhost:8000/`
+You will put all these files into a directory on your local machine. In this directory, enter this command `python -m SimpleHTTPServer PORTNUMBER`. This will spin up a server on PORTNUMBER that will serve static files. You should then be able to view `http://localhost:PORTNUMBER/`. It would be wise to use the port number 400 greater than your originally assigned lowest port number - that way you don't step on your other servers. For example, if your assigned ports are 4801 and 4901, you would use 5201 for this project.
+
+We recommend that you run on LOCALHOST on your computer. Using your eecs485 server for this project will require you to setup your Facebook Developer account differently.
+
+WINDOWS USERS: Install *just* python. Run `python -m http.server PORTNUMBER` from the command line and you will be all set!
 
 For grading this project, we will only be cloning your Github repo. The code sitting in your pa3 repo will be what we clone. There should be no subdirectories or files other than what we have specified (unless you do extra credit). Please specify anything anomalous in your `README.md`.
 
