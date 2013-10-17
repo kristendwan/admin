@@ -86,6 +86,7 @@ Here are the libraries and source files you will need.
 * [C++ Library](http://www-personal.umich.edu/~chjun/eecs485/pa4_C++.tar.gz)
 * [Java Library](http://www-personal.umich.edu/~chjun/eecs485/pa4_Java.tar.gz)
 * [PHP connector(server.php)](http://www-personal.umich.edu/~chjun/eecs485/server.php)
+* [Python library](http://www.python-requests.org/en/latest/)
 
 ### How to use the provided Library (Java and C++)
 
@@ -136,13 +137,23 @@ from the original files. We will use the provided MakeFile to build your code.
 
 The port number you pick will be the port number that your IndexServer listens on. Thus, it must be different from the HTTP port numbers that your web server opens. Pick a random 4-digit one.  Please tell us which port number you chose in your README.
 
-####To connect your PHP/Python code to the IndexServer: (For Java and C++)
+####To connect your PHP code to the IndexServer: (For Java and C++)
 
 Here are the steps you should follow: 
 
-* require "server.php";   //enable you to use the library
-* $myResults = queryIndex(portnumber, "localhost", $query_words); //send a query to the server, the first parameter is prot number which you used to start your server. The second parameter is hostname which is “localhost”; the third one is the query the user typed in. 
+* `require "server.php";`   //enable you to use the library
+* `$myResults = queryIndex(portnumber, "localhost", $query_words);` //send a query to the server, the first parameter is prot number which you used to start your server. The second parameter is hostname which is “localhost”; the third one is the query the user typed in. 
 * $myResults is an array. You can use var_dump($myResults) to see the details of the data structure.
+
+
+####To connect your Python code to the IndexServer: (For Java and C++)
+
+Here are the steps you should follow: 
+
+* `import requests`   //enable you to use the library
+* `result = requests.get('http://localhost:PORTNUMBER/search?q=QUERY')` //send a query to the server
+* result is an array. You can use `print result.text` to see the details.
+
 
 ## Search
 
