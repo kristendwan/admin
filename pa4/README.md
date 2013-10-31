@@ -1,6 +1,6 @@
 # Setting Up PA2
 
-[PHP](#PHP)
+[PHP](#php)
 
 [Python](#python)
 
