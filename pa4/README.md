@@ -2,7 +2,7 @@
 
 [PHP](#PHP)
 
-[Python](#Python)
+[Python](#python)
 
 ## PHP
 
