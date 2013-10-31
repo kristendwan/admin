@@ -20,4 +20,6 @@
 
 7) cd into your newly cloned repo and begin! Feel free to copy over relevant files from previous projects to get basic functionality for your server.
 
+8) Copy the server.php file into the newly cloned repo as well.
+
 ## Python
