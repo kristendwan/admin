@@ -1,10 +1,10 @@
 # Setting Up PA4
 
-[PHP](#php)
+[PHP](#PHP Klein Smarty)
 
 [Python](#python)
 
-## PHP
+## PHP Klein Smarty
 
 1) ssh into your eecs485 server
 
