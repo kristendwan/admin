@@ -38,16 +38,21 @@ This is the point where you have the option to upgrade from a micro instance (wh
 
 5. Ignore this security warning! And `Launch` the sucker.
 ![Pic 4](http://i.imgur.com/R3QU7p1.png)
-6. You need to create/download a keypair for this instance! Call it `485-hadoop-myname` or whatever you want. (Do NOT lose this. If you don't have it there's no way to get into your machine. You can share this with groupmates - though usually sharing keys is a bad idea...)
+6. You need to create/download a keypair for this instance! Call it `485-hadoop-myname` or whatever you want. 
+7. (Do NOT lose this. If you don't have it there's no way to get into your machine. You can share this with 
+8. groupmates - though usually sharing keys is a bad idea...)  
 ![Pic 6](http://i.imgur.com/fQrXH8q.png)
 7. Click `Launch Instance`!
 8. Go back to your `EC2 Dashboard`
-9. The box is booting. Once it's up you can log into it via SSH. Select your box and hit `connect` in the top left.
+9. The box is booting. Once it's up you can log into it via SSH. Select your box and hit `connect` in the top left.  
 ![Pic 7](http://i.imgur.com/o0QqGBD.png)
-10. Navigate to the same directory you put your `.pem` file and login as instructed. Something like:
-`ssh -i your_key.pem ubuntu@ec2-xx-xxx-xxx-xxx.compute-1.amazonaws.com`
+10. Navigate to the same directory you put your `.pem` file and login as instructed. 
+11. Before ssh'ing you need to run `chmod 400 your_key.pem` to make sure only you have access to the private key, otherwise AWS will yell at you.
+Then you can type something like: 
+	
+		ssh -i your_key.pem ubuntu@ec2-xx-xxx-xxx-xxx.compute-1.amazonaws.com
 
-11. Once you're in run all of these. You might get away with copy and pasting the whole block, but I'd run each of these by themselves and watch for errors!
+11. Once you're in, run all of these. You might get away with copy and pasting the whole block, but I'd run each of these by themselves and watch for errors!
 
 		sudo apt-get update
 		sudo apt-get install git
