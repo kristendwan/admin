@@ -12,7 +12,18 @@ of a hassle (once it's setup)!
  
 Luckily for you, I tell you how to do it, and did all the hard stuff already!
 
-1. Sign up for AWS. This shouldn't be too hard, but you'll probably need a credit card.
+1. Sign up for AWS. This shouldn't be too hard, but you'll need a credit card.
+
+  1a. Go to [aws.amazon.com](http://aws.amazon.com) and follow their instructions to setup a developer account. (You will probably get a phone call to confirm a PIN code).
+  
+  1b. If you did it right you should see a success page. Click the orange link pictured here
+  
+  ![AWS 1](http://i.imgur.com/Sx6FnBJ.png)
+  
+  1c. On the next page, log in to your developer account
+  
+  ![AWS 2](http://i.imgur.com/rkxn1iB.png)
+
 2. Go to the main AWS console and click on `EC2` in the top left.  
 ![Pic 1](http://i.imgur.com/BWDo8vP.png)
 3. You're now on the `EC2 Dashboard`. Click `Launch Instance`.
@@ -20,7 +31,7 @@ Luckily for you, I tell you how to do it, and did all the hard stuff already!
 4. Let's go with Ubuntu Server 12.04. Why? Cause I feel like it.
 ![Pic 3](http://i.imgur.com/96Yl9oF.png)
 Optional:
-This is the point where you have the option to upgrade from a micro instance (which is the default). The micro instances only have `.613GB` of memory. A `m1.medium` or `m1.large` would churn though this much faster, but will cost more (again, micro is free if you're new!) Use this [Pricing Calculator](http://calculator.s3.amazonaws.com/calc5.html). About 20 hours on a large will set you back a whopping $4.80. If you're daring (and I know you are) watch a `c3.8xlarge` obliterate this project but 1 hour will cost you $2.40. :)
+This is the point where you have the option to upgrade from a micro instance (which is the default). The micro instances only have `.613GB` of memory. A `m1.medium` or `m1.large` would churn through this much faster, but will cost more (again, micro is free if you're new!) Use this [Pricing Calculator](http://calculator.s3.amazonaws.com/calc5.html). About 20 hours on a large will set you back a whopping $4.80. If you're daring (and I know you are) watch a `c3.8xlarge` obliterate this project but 1 hour will cost you $2.40. :)
  **BUT PLEASE DONT FORGET TO TURN YOUR BOXES OFF WHEN YOU'RE DONE!**
  Also, if you're playing around with box sizes, start small to debug. Once you're confident try out a bigger box for speed.
 ![Pricing](http://i.imgur.com/3QKyZwJ.png)
