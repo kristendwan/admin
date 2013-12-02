@@ -90,7 +90,7 @@ use external text packages as the training set.
 ## Additional Notes
 Other technical notes on running MapReduce program including 
 * Installation of the software
-* [Here](https://github.com/EECS485/admin/blob/master/pa6_notes.md) is the explanation about the dataset we will use.
+* [Here](https://github.com/EECS485/admin/blob/master/pa6/pa6_notes.md) is the explanation about the dataset we will use.
 
 
 ## Grading
