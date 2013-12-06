@@ -1,5 +1,5 @@
 # Assignment 6: The Next Great Search Engine
-### Due Wed, Dec 11, 2013, at 11:59 PM
+### Due Thurs, Dec 12, 2013, at 11:59 PM
 
 In this assignment you will build an integrated Web search engine that has several features:
 * Ranking based on both tf-idf and PageRank scoring
